@@ -27,6 +27,6 @@ jobs:
     - name: Build and Push the image
       run: 
         docker login --username jishnuvs78 --password ${{ secrets.GHCR_PASS }} ghcr.io
-        docker build -t ghcr.io/jishnuvs78/kubernetes-test-env-ghcr:latest
+        docker build -t ghcr.io/jishnuvs78/kubernetes-test-env-ghcr:latest .
         docker push ghcr.io/jishnuvs78/kubernetes-test-env-ghcr:latest
         
